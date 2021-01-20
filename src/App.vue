@@ -10,7 +10,8 @@
   <ul>
     <li v-for="(hero, index) in heros" :key="index">{{ index }} : {{ hero.name }}</li>
   </ul>
-  <input type="text" :[attribute]="newHero"/>
+  <!-- <input type="text" v-model="newHero"/> -->
+  <input type="text" v-model.lazy="newHero"/>
   <button :disabled="isDisable">Add Hero</button>
 </template>
 
@@ -22,8 +23,6 @@ export default {
       // isShowing: null,
       // count: 0,
       // text: "v-text is the same of interpolation",
-      attribute: "value",
-      isDisable: true ,
       heros: [{
         name: 'Batman',
       }, {

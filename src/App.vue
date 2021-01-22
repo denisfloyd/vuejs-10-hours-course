@@ -11,7 +11,8 @@
     <li v-for="(hero, index) in heros" :key="index">{{ index }} : {{ hero.name }}</li>
   </ul>
   <!-- <input type="text" v-model="newHero"/> -->
-  <input type="text" v-model.lazy="newHero"/>
+  <!-- <input type="text" v-model.lazy="newHero"/> -->
+  <input type="text" v-model.number="newHero"/>
   <button :disabled="isDisable">Add Hero</button>
 </template>
 

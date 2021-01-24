@@ -8,12 +8,15 @@
   <p v-text="text" />  -->
   <h1>Heros</h1>
   <ul>
-    <li v-for="(hero, index) in heros" :key="index">{{ index }} : {{ hero.name }}</li>
+    <li v-for="(hero, index) in heros" :key="index">{{ hero.name }}</li>
   </ul>
   <!-- <input type="text" v-model="newHero"/> -->
   <!-- <input type="text" v-model.lazy="newHero"/> -->
-  <input type="text" v-model.number="newHero"/>
-  <button :disabled="isDisable">Add Hero</button>
+  <form @submit.prevent="newHero = 'Wonder Woman'">
+    <input type="text" v-model.number="newHero"/>
+    <!-- <button v-on:click="newHero = 'Worder Woman'">Add Hero</button> -->
+    <button type="submit">Add Hero</button>
+  </form>
 </template>
 
 <script>

@@ -10,16 +10,17 @@
   <AppHeader />
 
   <div class="w-full flex">
-    <DcHeros />
+    <Calendar />
   </div>
 </template>
 
 <script>
 import AppHeader from './components/AppHeader';
-import DcHeros from './pages/DcHeros';
+//import DcHeros from './pages/DcHeros';
+import Calendar from './pages/Calendar';
 
 export default {
-  components: { AppHeader, DcHeros },
+  components: { AppHeader, Calendar },
 };
 </script>
 

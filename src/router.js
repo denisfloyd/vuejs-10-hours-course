@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import DcHeros from "./pages/DcHeros";
 import Calendar from "./pages/Calendar";
-// import Home from "./pages/Home";
+import Home from "./pages/Home";
 // import Markdown from "./pages/Markdown";
 // import Slider from "./pages/Slider";
 // import Calculator from "./pages/Calculator";
@@ -12,7 +12,7 @@ import Calendar from "./pages/Calendar";
 // import store from "./store/index";
 
 const routes = [
-  // { path: "/", component: Home },
+  { path: "/", component: Home },
   { path: "/dc-heros", component: DcHeros },
   { path: "/calendar", component: Calendar }
   // { path: "/markdown", component: Markdown },

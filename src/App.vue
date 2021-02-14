@@ -8,19 +8,18 @@
   <p v-text="text" />  -->
 
   <AppHeader />
-
   <div class="w-full flex">
-    <Calendar />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import AppHeader from './components/AppHeader';
 //import DcHeros from './pages/DcHeros';
-import Calendar from './pages/Calendar';
+// import Calendar from './pages/Calendar';
 
 export default {
-  components: { AppHeader, Calendar },
+  components: { AppHeader },
 };
 </script>
 

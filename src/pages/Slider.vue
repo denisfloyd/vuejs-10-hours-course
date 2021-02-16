@@ -55,7 +55,7 @@ export default {
   mounted() {
     this.interval = setInterval(() => {
       this.currentSlide = this.currentSlide === 2 ? 0 : this.currentSlide + 1;
-    }, 5000);
+    }, 3000);
   },
   beforeUnmount() {
     clearInterval(this.interval);
@@ -74,6 +74,7 @@ export default {
 }
 .fade-leave-to {
   opacity: 0;
+  width: 0;
   transform: translateX(100%);
 }
 </style> 

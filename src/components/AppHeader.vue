@@ -21,7 +21,7 @@ export default {
         { title: "Dc Heros", to: "/dc-heros" },
         { title: "Calendar", to: "/calendar" },
         { title: "Markdown", to: "/markdown" },
-        // { title: "Slider", to: "/slider-carousel" },
+        { title: "Slider", to: "/slider-carousel" },
         // { title: "Calculator", to: "/calculator" },
         // { title: "Modal", to: "/resuseable-modal" },
         // { title: "Chat", to: "/chat" },

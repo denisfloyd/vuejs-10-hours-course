@@ -10,6 +10,11 @@
       :to="item.to"
       >{{ item.title }}</router-link
     >
+
+    <!-- <button v-if="isLoggedIn" class="mx-2" @click="logout">Logout</button> -->
+    <button class="mx-2" @click="$emit('open-login-modal')">
+      Login
+    </button> 
   </nav>
 </template>
 
@@ -29,6 +34,16 @@ export default {
         // { title: "Tensorflow", to: "/tensorflow" },
       ],
     };
+  },
+  computed: {
+    isLoggedIn() {
+      return this.$store.state.isLoggedIn;
+    },
+  },
+  methods: {
+    openLogin() {
+      this.$store.commit("setLoginModal", true);
+    },
   },
 };
 </script>

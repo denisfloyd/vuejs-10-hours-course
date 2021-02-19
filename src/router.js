@@ -2,8 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import DcHeros from "./pages/DcHeros";
 import Calendar from "./pages/Calendar";
 import Home from "./pages/Home";
-// import Markdown from "./pages/Markdown";
-// import Slider from "./pages/Slider";
+import Markdown from "./pages/Markdown";
+import Slider from "./pages/Slider";
 // import Calculator from "./pages/Calculator";
 // import ReuseableModal from "./pages/ReuseableModal";
 // import UserCrud from "./pages/UserCrud";
@@ -14,9 +14,9 @@ import Home from "./pages/Home";
 const routes = [
   { path: "/", component: Home },
   { path: "/dc-heros", component: DcHeros },
-  { path: "/calendar", component: Calendar }
-  // { path: "/markdown", component: Markdown },
-  // { path: "/slider-carousel", component: Slider },
+  { path: "/calendar", component: Calendar },
+  { path: "/markdown", component: Markdown },
+  { path: "/slider-carousel", component: Slider },
   // { path: "/calculator", component: Calculator, meta: { middleware: "auth" } },
   // { path: "/resuseable-modal", component: ReuseableModal },
   // {

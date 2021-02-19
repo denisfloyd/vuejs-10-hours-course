@@ -7,19 +7,26 @@
   <h2 v-once>{{ count }}</h2>
   <p v-text="text" />  -->
 
-  <AppHeader />
+  <AppHeader @open-login-modal="isLoginOpen = true"/>
   <div class="w-full flex">
     <router-view></router-view>
   </div>
+  <LoginModal v-if="isLoginOpen" @close-login="isLoginOpen = false" />
 </template>
 
 <script>
 import AppHeader from './components/AppHeader';
 //import DcHeros from './pages/DcHeros';
 // import Calendar from './pages/Calendar';
+import LoginModal from './components/LoginModal';
 
 export default {
-  components: { AppHeader },
+  data() {
+    return {
+      isLoginOpen: false,
+    }
+  },
+  components: { AppHeader, LoginModal },
 };
 </script>
 

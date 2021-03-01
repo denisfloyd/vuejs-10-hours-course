@@ -6,25 +6,31 @@
   <h2>{{ count }}</h2>
   <h2 v-once>{{ count }}</h2>
   <p v-text="text" />  -->
-
-  <AppHeader @open-login-modal="isLoginOpen = true"/>
+  <AppHeader />
   <div class="w-full flex">
     <router-view></router-view>
   </div>
-  <LoginModal v-if="isLoginOpen" @close-login="isLoginOpen = false" />
+  <teleport to="body">
+    <LoginModal />
+  </teleport>
 </template>
 
 <script>
-import AppHeader from './components/AppHeader';
-//import DcHeros from './pages/DcHeros';
-// import Calendar from './pages/Calendar';
-import LoginModal from './components/LoginModal';
-
+import AppHeader from "./components/AppHeader";
+import LoginModal from "./components/LoginModal";
+import firebase from "./utilities/firebase";
 export default {
-  data() {
-    return {
-      isLoginOpen: false,
-    }
+  mounted() {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.$store.commit("setIsLoggedIn", true);
+        this.$store.commit("setLoginModal", false);
+        this.$store.commit("setAuthUser", user); 
+      } else {
+        this.$store.commit("setIsLoggedIn", false);
+        this.$store.commit("setAuthUser", {});
+      }
+    });
   },
   components: { AppHeader, LoginModal },
 };

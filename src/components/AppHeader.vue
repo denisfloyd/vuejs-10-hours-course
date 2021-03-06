@@ -18,6 +18,7 @@
 </template>
 
 <script>
+import firebase from "../utilities/firebase";
 export default {
   data() {
     return {

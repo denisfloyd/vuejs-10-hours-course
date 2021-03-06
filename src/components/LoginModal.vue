@@ -32,7 +32,7 @@
                   placeholder="enter your password"
                 />
               </div>
-              <div class="my-4">
+              <div class="my-4"> 
                 <button
                   type="submit"
                   class="w-full rounded shadow-md bg-gradient-to-r from-red-800 to-pink-800 text-white p-2"

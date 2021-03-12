@@ -6,8 +6,7 @@
         <small>You can fully use keyboard to calculate</small>
       </div>
       <p
-        class="text-3xl text-right border mt-10 w-56 h-10 overflow-x-scroll"
-        style="direction:rtl"
+        class="text-3xl text-right border mt-10 w-56 h-20 overflow-x-overlay overflow-y-hidden"
       >
         {{ currentNum }}
       </p>
@@ -142,7 +141,7 @@ export default {
       else if (selectedOperation.value === "/") divide();
       else if (selectedOperation.value === "-") subtract();
       else if (selectedOperation.value === "+") sum();
-      prevNum.value = ""; 
+      prevNum.value = "";
       selectedOperation.value = "";
     }
     function multiply() {
@@ -155,7 +154,7 @@ export default {
       currentNum.value = prevNum.value - currentNum.value;
     }
     function sum() {
-      currentNum.value = Number(prevNum.value) + Number(currentNum.value);
+      currentNum.value = +prevNum.value + +currentNum.value;
     }
     const clear = () => (currentNum.value = "");
     const handleKeydown = (e) => pressed(e.key);

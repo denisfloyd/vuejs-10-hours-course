@@ -27,7 +27,7 @@ export default {
         { title: "Calendar", to: "/calendar" },
         { title: "Markdown", to: "/markdown" },
         { title: "Slider", to: "/slider-carousel" },
-        // { title: "Calculator", to: "/calculator" },
+        { title: "Calculator", to: "/calculator" },
         // { title: "Modal", to: "/resuseable-modal" },
         // { title: "Chat", to: "/chat" },
         // { title: "User Crud", to: "/user-crud" },

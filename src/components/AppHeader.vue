@@ -28,7 +28,7 @@ export default {
         { title: "Markdown", to: "/markdown" },
         { title: "Slider", to: "/slider-carousel" },
         { title: "Calculator", to: "/calculator" },
-        // { title: "Modal", to: "/resuseable-modal" },
+        { title: "Modal", to: "/resuseable-modal" },
         // { title: "Chat", to: "/chat" },
         // { title: "User Crud", to: "/user-crud" },
         // { title: "Tensorflow", to: "/tensorflow" },

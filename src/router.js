@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Markdown from "./pages/Markdown";
 import Slider from "./pages/Slider";
 import Calculator from "./pages/Calculator";
-// import ReuseableModal from "./pages/ReuseableModal";
+import ReuseableModal from "./pages/ReuseableModal";
 // import UserCrud from "./pages/UserCrud";
 // import Chat from "./pages/Chat";
 // import Tensorflow from "./pages/Tensorflow";
@@ -18,7 +18,7 @@ const routes = [
   { path: "/markdown", component: Markdown },
   { path: "/slider-carousel", component: Slider },
   { path: "/calculator", component: Calculator, meta: { middleware: "auth" } },
-  // { path: "/resuseable-modal", component: ReuseableModal },
+  { path: "/resuseable-modal", component: ReuseableModal },
   // {
   //   path: "/chat",
   //   component: Chat,

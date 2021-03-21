@@ -7,7 +7,7 @@ import Slider from "./pages/Slider";
 import Calculator from "./pages/Calculator";
 import ReuseableModal from "./pages/ReuseableModal";
 import Chat from "./pages/Chat";
-// import UserCrud from "./pages/UserCrud";
+import UserCrud from "./pages/UserCrud";
 // import Tensorflow from "./pages/Tensorflow";
 import store from "./store/index";
 
@@ -24,7 +24,7 @@ const routes = [
     component: Chat,
     meta: { middleware: "auth" },
   },
-  // { path: "/user-crud", component: UserCrud },
+  { path: "/user-crud", component: UserCrud },
   // { path: "/tensorflow", component: Tensorflow },
 ];
 

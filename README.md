@@ -13,8 +13,7 @@
   </a>
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-green">
-  
-  ![Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=vuejs-10-hours-course)
+ 
 </p>
 
 <p align="center">
